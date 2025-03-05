@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container{
+            height: 100vh;
+            background-color: beige;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        #btn{
+            padding: 12px;
+            border: none;
+            background: rgb(196, 112, 196);
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+            border-radius: 2px;
+        }
+        #btn:hover{
+            border-radius: 5px;
+            padding: 15px;
+            color: #fff;
+            background: rgb(34, 0, 255);
+        }
+
+        #log{
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        @media(max-width: 472){
+            #btn{
+                padding: 8px;
+            }
+            #log{
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p id="log"></p>
+        <button id="btn">Now Click Me</button>
+        <p>or</p>
+        <p>Press <em>Enter</em></p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
